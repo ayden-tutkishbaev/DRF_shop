@@ -1,3 +1,9 @@
 from django.contrib import admin
 
-# Register your models here.
+from clinics.models import *
+
+
+@admin.register(Vacancy)
+class VacancyAdmin(admin.ModelAdmin):
+    list_display = ['id', 'title', 'requirements']
+    search_fields = ['title', 'requirements', 'responsibilities', 'conditions']

@@ -31,7 +31,8 @@ LOCAL_APPS = [
 
 THIRD_PARTY_APPS = [
     'rest_framework',
-    'mptt'
+    'mptt',
+    'ckeditor'
 ]
 
 GLOBAL_APPS = [
